@@ -613,6 +613,15 @@ body.no-notes .note,body.no-notes .shot-tag{display:none}
   .ocopy{padding:56px 48px;justify-content:center}
   .oimg{min-height:520px}
 }
+
+/* ---------- Planos reais (3 colunas) ---------- */
+.plans{max-width:1180px}
+.plan-price small{font-size:15px;color:#8E96A3;font-weight:500;letter-spacing:0;margin-left:2px}
+.plan-sub{font-size:14px;color:#8E96A3;margin:0 0 4px}
+.plan-inc li{border-bottom:0;padding:7px 0}
+.faddr{font-size:14px!important;line-height:1.5;max-width:300px;margin-top:16px!important}
+@media (min-width:640px){.plans{grid-template-columns:1fr}}
+@media (min-width:960px){.plans{grid-template-columns:repeat(3,1fr)}}
 /* evita viúvas: títulos equilibrados, parágrafos sem palavra sozinha na última linha */
 h1,h2,h3,h4,.statement,.cta-bar p,.close-bar p{text-wrap:balance}
 p,li,.faq-q,.fq-q{text-wrap:pretty}
@@ -1058,19 +1067,24 @@ p,li,.faq-q,.fq-q{text-wrap:pretty}
     </div>
     <div class="plans">
       <div class="plan rv">
-        <div class="plan-top"><h3>Plano 5 usuários</h3><div class="plan-price">R$ <span class="pending">[VALOR A DEFINIR]</span></div></div>
+        <div class="plan-top"><h3>Vertta Start</h3><div class="plan-price">R$ 199,90<small>/mês</small></div></div>
         <div class="plan-trial"><svg><use href="#i-gift"/></svg>7 dias grátis</div>
-        <div class="plan-inc"><ul><li><span class="ck"><svg><use href="#i-check"/></svg></span><span class="pending">[ITENS DO PLANO A DEFINIR]</span></li></ul></div>
-        <a class="btn btn-dark btn-block js-wa" href="#" data-cta="plano-5"><span class="fill"></span><span class="bi"><svg><use href="#i-wa"/></svg></span><span class="bt">Testar grátis por 7 dias</span></a>
+        <div class="plan-inc"><p class="plan-sub">Escolha 1 módulo:</p><ul><li><span class="ck"><svg><use href="#i-check"/></svg></span>Vistorias, Licenças ou Estudos.</li></ul></div>
+        <a class="btn btn-dark btn-block js-wa" href="#" data-cta="plano-start"><span class="fill"></span><span class="bi"><svg><use href="#i-wa"/></svg></span><span class="bt">Testar grátis por 7 dias</span></a>
       </div>
       <div class="plan feat rv d1">
-        <div class="plan-top"><h3>Plano 10 usuários</h3><div class="plan-price">R$ <span class="pending">[VALOR A DEFINIR]</span></div></div>
+        <div class="plan-top"><h3>Vertta Pro</h3><div class="plan-price">R$ 289,90<small>/mês</small></div></div>
         <div class="plan-trial"><svg><use href="#i-gift"/></svg>7 dias grátis</div>
-        <div class="plan-inc"><ul><li><span class="ck"><svg><use href="#i-check"/></svg></span><span class="pending">[ITENS DO PLANO A DEFINIR]</span></li></ul></div>
-        <a class="btn btn-terra btn-block js-wa" href="#" data-cta="plano-10"><span class="fill"></span><span class="bi"><svg><use href="#i-wa"/></svg></span><span class="bt">Testar grátis por 7 dias</span></a>
+        <div class="plan-inc"><p class="plan-sub">Escolha 2 módulos:</p><ul><li><span class="ck"><svg><use href="#i-check"/></svg></span>Vistorias + Licenças</li><li><span class="ck"><svg><use href="#i-check"/></svg></span>Vistorias + Estudos</li><li><span class="ck"><svg><use href="#i-check"/></svg></span>Licenças + Estudos</li></ul></div>
+        <a class="btn btn-terra btn-block js-wa" href="#" data-cta="plano-pro"><span class="fill"></span><span class="bi"><svg><use href="#i-wa"/></svg></span><span class="bt">Testar grátis por 7 dias</span></a>
+      </div>
+      <div class="plan rv d2">
+        <div class="plan-top"><h3>Vertta Full</h3><div class="plan-price">R$ 379,90<small>/mês</small></div></div>
+        <div class="plan-trial"><svg><use href="#i-gift"/></svg>7 dias grátis</div>
+        <div class="plan-inc"><p class="plan-sub">Todos os 3 módulos inclusos:</p><ul><li><span class="ck"><svg><use href="#i-check"/></svg></span>Vistorias</li><li><span class="ck"><svg><use href="#i-check"/></svg></span>Licenças</li><li><span class="ck"><svg><use href="#i-check"/></svg></span>Estudos</li></ul></div>
+        <a class="btn btn-dark btn-block js-wa" href="#" data-cta="plano-full"><span class="fill"></span><span class="bi"><svg><use href="#i-wa"/></svg></span><span class="bt">Testar grátis por 7 dias</span></a>
       </div>
     </div>
-    <!-- NOTA INTERNA: [Preencher valores, recursos, forma de cobrança, fidelidade e regras de cancelamento somente após definição comercial.] -->
   </div>
 </section>
 
@@ -1132,8 +1146,8 @@ p,li,.faq-q,.fq-q{text-wrap:pretty}
       </div>
     </div>
     <div class="fgrid">
-      <div class="fbrand"><svg class="logo" viewBox="0 0 737 182" role="img" aria-label="Vertta"><use href="#logo"/></svg><p>Software para consultorias ambientais</p></div>
-      <div class="fcol"><h4>WhatsApp</h4><a class="js-wa" href="#" data-cta="rodape">(62) 99999-9999</a></div>
+      <div class="fbrand"><svg class="logo" viewBox="0 0 737 182" role="img" aria-label="Vertta"><use href="#logo"/></svg><p>Software para consultorias ambientais</p><p class="faddr">Eldorado Business Tower - Av. C-255, 400 - Sl 206 e 207 - Nova Suiça, Goiânia - GO, 74280-010</p></div>
+      <div class="fcol"><h4>WhatsApp</h4><a class="js-wa" href="#" data-cta="rodape">(62) 99999-9999</a><h4 style="margin-top:18px">Telefone</h4><a href="tel:+556298215916">+55 62 9821-5916</a></div>
       <div class="fcol"><h4>CNPJ</h4><p><span class="pending">[AGUARDANDO DEFINIÇÃO]</span></p><h4 style="margin-top:18px">E-mail</h4><p><span class="pending">[AGUARDANDO DEFINIÇÃO]</span></p></div>
       <div class="fcol"><h4>Política de Privacidade</h4><p><span class="pending">[INSERIR LINK]</span></p><h4 style="margin-top:18px">Termos de Uso</h4><p><span class="pending">[INSERIR LINK]</span></p></div>
     </div>
