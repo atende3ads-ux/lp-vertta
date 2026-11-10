@@ -633,6 +633,82 @@ body.no-notes .note,body.no-notes .shot-tag{display:none}
 .bvis.has-shot{display:block;padding:0}
 .bvis.has-shot::after{display:none}
 .bvis.has-shot img{position:relative;z-index:1;display:block;width:100%;height:100%;object-fit:cover;object-position:left top;border-radius:12px}
+
+/* ---------- Origem com foto real ---------- */
+.oimg.has-photo{background:none;border:0;min-height:0;padding:8px 4px 4px;overflow:visible}
+.oimg.has-photo img{display:block;width:100%;max-width:560px;height:auto;margin:0 auto;filter:drop-shadow(0 30px 50px rgba(0,0,0,.45))}
+@media (min-width:960px){.oimg.has-photo{min-height:0;padding:40px 40px 40px 0}}
+
+/* ---------- Painel do produto em HTML (desenhado em 1440x900 e escalado) ---------- */
+@font-face{font-family:"Colasta DH";src:url("fonts/colasta-700.woff2") format("woff2");font-weight:700;font-style:normal;font-display:swap}
+.dh-box{position:relative;width:100%;aspect-ratio:1440/900;overflow:hidden;border-radius:18px;background:#F5F2EB}
+.dh{position:absolute;left:0;top:0;width:1440px;height:900px;transform-origin:0 0;transform:scale(var(--k,.8));display:flex;font-family:"Poppins",system-ui,sans-serif;color:#1F2933;letter-spacing:0;line-height:1.3;text-align:left;-webkit-font-smoothing:antialiased}
+.dh *{box-sizing:border-box}
+.dh svg{width:22px;height:22px;flex:none;fill:none;stroke:currentColor;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
+.dh h5,.dh h6,.dh-kpi b,.dh-total b{font-family:"Colasta DH","Poppins",sans-serif;font-weight:700;letter-spacing:-.01em;margin:0;color:#1F2933}
+.dh p{margin:0}
+/* menu lateral */
+.dh-side{width:320px;flex:none;background:linear-gradient(180deg,#233142,#1F2C3B);padding:32px 24px;display:flex;flex-direction:column}
+.dh-brand{height:170px;border-radius:18px;background:linear-gradient(160deg,#34455A,#2A394B);border:1px solid rgba(255,255,255,.09);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:26px;margin-bottom:34px}
+.dh-logo{width:116px!important;height:30px!important;stroke:none!important;color:#F2A35E}
+.dh-brand p{font-size:10.5px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;text-align:center;color:rgba(255,255,255,.62);line-height:1.5}
+.dh-op,.dh-grp,.dh-sub{display:flex;align-items:center;gap:12px;color:rgba(255,255,255,.88);font-size:17px}
+.dh-op{height:50px;padding:0 16px;border-radius:12px;border:1px solid rgba(240,163,94,.55);border-left:3px solid #F0A35E;background:rgba(255,255,255,.07);color:#F2A35E;margin-bottom:6px}
+.dh-chev{margin-left:auto;width:16px!important;height:16px!important;opacity:.85}
+.dh-sub{height:50px;padding:0 0 0 41px;margin-bottom:6px;border-radius:10px;font-size:16px;color:rgba(255,255,255,.6)}
+.dh-sub svg{width:21px;height:21px}
+.dh-sub.on{background:rgba(255,255,255,.07);color:#F2A35E;font-weight:600}
+.dh-grp{height:50px;padding:0 24px 0 16px;margin-top:9px}
+/* área principal */
+.dh-main{flex:1;padding:32px 32px 0;display:flex;flex-direction:column;gap:0;min-width:0}
+.dh-top{display:flex;justify-content:space-between;align-items:flex-start;height:93px}
+.dh-top small{display:block;font-size:11.5px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:#7E7C77;margin:2px 0 8px}
+.dh-top h5{font-size:31px}
+.dh-urg{display:flex;align-items:center;gap:14px;height:68px;padding:0 22px 0 18px;white-space:nowrap;border-radius:10px;background:#ECE8DE;border:1px solid #DAD5CA;border-left:3px solid #CFC9BC;color:#3E4651}
+.dh-urg b{display:block;font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:#4A515B}
+.dh-urg span{font-size:13px}
+.dh-card{background:#fff;border:1px solid #EDE8E0;border-radius:14px;box-shadow:0 1px 2px rgba(30,40,50,.04)}
+.dh-kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-bottom:26px}
+.dh-kpi{height:82px;display:flex;align-items:center;gap:14px;padding:0 18px}
+.dh-kpi i,.dh-act i{display:grid;place-items:center;width:40px;height:40px;border-radius:10px;background:#FBEAE5;color:#B2573D;flex:none}
+.dh-kpi i svg,.dh-act i svg{width:19px;height:19px}
+.dh-kpi b{display:block;font-size:27px;line-height:1}
+.dh-kpi span{font-size:13px;color:#3F4752}
+.dh-charts{display:grid;grid-template-columns:1fr 1fr;gap:18px;height:280px}
+.dh-chart{padding:22px 20px}
+.dh-ch{display:flex;justify-content:space-between;align-items:center}
+.dh-ch h6{font-size:21px}
+.dh-ch em{font-style:normal;height:42px;padding:0 20px;display:grid;place-items:center;border-radius:21px;background:#FBEEEA;border:1px solid #F1D9D0;color:#A64F38;font-size:15px;font-weight:600}
+.dh-empty{font-size:14.5px;color:#3F4752;margin-top:14px!important}
+.dh-donut-row{display:flex;align-items:center;gap:26px;margin-top:20px}
+.dh-donut{position:relative;width:170px;height:170px;flex:none}
+.dh-donut svg{width:170px;height:170px;transform:rotate(-90deg);stroke-linecap:butt}
+.dh-donut .seg{fill:none;stroke-width:31;animation:dhSeg 1.1s cubic-bezier(.2,.7,.2,1) both}
+.dh-donut .s1{stroke:#98A3B3;stroke-dasharray:32.7 67.3;stroke-dashoffset:-.3;--o:-.3}
+.dh-donut .s2{stroke:#3B82F6;stroke-dasharray:49.4 50.6;stroke-dashoffset:-33.6;--o:-33.6;animation-delay:.15s}
+.dh-donut .s3{stroke:#16A34A;stroke-dasharray:15.8 84.2;stroke-dashoffset:-83.9;--o:-83.9;animation-delay:.3s}
+@keyframes dhSeg{from{stroke-dasharray:0 100}}
+.dh-total{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.dh-total b{font-size:30px;line-height:1}
+.dh-total span{font-size:13px;font-weight:500;color:#3F4752;margin-top:4px}
+.dh-leg{list-style:none;margin:0;padding:0;flex:1;display:flex;flex-direction:column;gap:12px}
+.dh-leg li{display:flex;align-items:center;font-size:14.5px;color:#2D3540;height:18px}
+.dh-leg i{width:11px;height:11px;border-radius:50%;margin-right:10px}
+.dh-leg b{margin-left:auto;font-weight:600;font-size:15px}
+.dh-leg small{width:48px;text-align:right;font-size:12px;color:#6B7280}
+.dh-lbl{font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:#5B616A;margin:28px 0 12px!important}
+.dh-acts{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:26px}
+.dh-act{height:110px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;font-size:14.5px;font-weight:500;color:#2D3540}
+.dh-feed{padding:22px 20px 0;flex:1;border-bottom-left-radius:0;border-bottom-right-radius:0}
+.dh-feed h6{font-size:22px;margin-bottom:18px}
+.dh-row{display:flex;align-items:center;gap:14px;padding:14px 0;border-bottom:1px solid #EEEAE3}
+.dh-row i{display:grid;place-items:center;width:36px;height:36px;border-radius:9px;background:#E7EEF6;color:#5A6F8C;flex:none}
+.dh-row i svg{width:18px;height:18px}
+.dh-row b{display:block;font-size:15.5px;font-weight:500;color:#1F2933}
+.dh-row span{font-size:13.5px;color:#5B616A}
+.dh-st{margin-left:auto;display:flex;flex-direction:column;align-items:flex-end;gap:8px}
+.dh-st em{font-style:normal;font-size:13.5px;font-weight:600;color:#2D3540;padding:4px 11px;border-radius:14px;border:1px solid #E3DFD8;background:#fff}
+@media (prefers-reduced-motion:reduce){.dh-donut .seg{animation:none}}
 /* evita viúvas: títulos equilibrados, parágrafos sem palavra sozinha na última linha */
 h1,h2,h3,h4,.statement,.cta-bar p,.close-bar p{text-wrap:balance}
 p,li,.faq-q,.fq-q{text-wrap:pretty}
@@ -677,6 +753,34 @@ p,li,.faq-q,.fq-q{text-wrap:pretty}
     <symbol id="i-search" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m20 20-4.5-4.5"/></g></symbol>
     <symbol id="i-quote" viewBox="0 0 24 24"><path fill="currentColor" d="M7 7h4v4H8.5c0 1.7.9 2.6 2.5 3v2c-3-.4-4.5-2.3-4.5-5.5V7zm7 0h4v4h-2.5c0 1.7.9 2.6 2.5 3v2c-3-.4-4.5-2.3-4.5-5.5V7z"/></symbol>
     <symbol id="i-down" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" d="M6 9l6 6 6-6"/></symbol>
+    <symbol id="logo-mono" viewBox="0 0 737 182">
+      <use href="#sym" x="-2" width="158" height="182"/>
+      <g fill="currentColor">
+        <path d="M302.97 124.65l-30.39.03c-8.38 28.45-40.08 26.11-40.08 26.11s-40.52-1.81-40.52-35.07h111.33c.12-4.14.2-7.16.2-10.79 0-42.06-31.96-76.11-70.9-76.11S162.11 62.91 162.11 104.97s31.56 76.15 70.5 76.15c0 0 56.41 3.51 70.38-56.48zM192.07 92.84s9.21-34.27 40.83-34.27 40.02 34.27 40.02 34.27z"/>
+        <path d="M312.9 181.28V76.83c0-26.68 21.63-48.32 48.32-48.32h22.88v33.6h-22.3c-7.96 0-14.41 6.45-14.41 14.41v104.74z"/>
+        <path d="M462.4 181.28v-33.66h-33.32V62.14h33.32V28.53h-33.32V0h-36.33v62.13h30.07s-28.38 4.99-28.38 28.51v38.51c0 28.79 23.34 52.13 52.13 52.13z"/>
+        <path d="M540.62 181.28v-33.66H507.3V62.14h33.32V28.53H507.3V0h-36.34v62.13h30.07s-28.38 4.99-28.38 28.51v38.51c0 28.79 23.34 52.13 52.13 52.13z"/>
+        <path d="M613.25 28.51c-42.19 0-76.38 34.2-76.38 76.39s34.2 76.38 76.38 76.38c15.64 0 30.18-4.7 42.28-12.76l-.05 12.76h34.15v-76.38c0-42.19-34.2-76.39-76.38-76.39zm0 119.93c-24.03 0-43.53-19.49-43.53-43.53s19.49-43.53 43.53-43.53 43.53 19.49 43.53 43.53-19.49 43.53-43.53 43.53z"/>
+      </g>
+      <circle cx="717.42" cy="162.11" r="19.2" fill="currentColor"/>
+    </symbol>
+    <!-- ícones do painel (mesmo desenho do produto) -->
+    <symbol id="d-users" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
+    <symbol id="d-clip" viewBox="0 0 24 24"><rect width="8" height="4" x="8" y="2" rx="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="m9 14 2 2 4-4"/></symbol>
+    <symbol id="d-leaf" viewBox="0 0 24 24"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></symbol>
+    <symbol id="d-alert" viewBox="0 0 24 24"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3"/><path d="M12 9v4"/><path d="M12 17h.01"/></symbol>
+    <symbol id="d-ok" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></symbol>
+    <symbol id="d-grid" viewBox="0 0 24 24"><rect width="7" height="7" x="3" y="3" rx="1"/><rect width="7" height="7" x="14" y="3" rx="1"/><rect width="7" height="7" x="14" y="14" rx="1"/><rect width="7" height="7" x="3" y="14" rx="1"/></symbol>
+    <symbol id="d-home" viewBox="0 0 24 24"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/><path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></symbol>
+    <symbol id="d-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></symbol>
+    <symbol id="d-bars" viewBox="0 0 24 24"><path d="M6 20v-4"/><path d="M12 20V10"/><path d="M18 20V4"/></symbol>
+    <symbol id="d-folder" viewBox="0 0 24 24"><path d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"/></symbol>
+    <symbol id="d-ucog" viewBox="0 0 24 24"><circle cx="18" cy="15" r="3"/><circle cx="9" cy="7" r="4"/><path d="M10 15H6a4 4 0 0 0-4 4v2"/><path d="m21.7 16.4-.9-.3M15.2 13.9l-.9-.3M16.6 18.7l.3-.9M19.1 12.2l.3-.9M19.6 18.7l-.4-1M16.8 12.3l-.4-1M14.3 16.6l1-.4M20.7 13.8l1-.4"/></symbol>
+    <symbol id="d-sliders" viewBox="0 0 24 24"><path d="M21 4h-7M10 4H3M21 12h-9M8 12H3M21 20h-5M12 20H3M14 2v4M8 10v4M16 18v4"/></symbol>
+    <symbol id="d-archive" viewBox="0 0 24 24"><rect width="18" height="16" x="3" y="4" rx="2"/><path d="M3 9h18"/><path d="M10 13h4"/></symbol>
+    <symbol id="d-file" viewBox="0 0 24 24"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M10 9H8M16 13H8M16 17H8"/></symbol>
+    <symbol id="d-down" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+    <symbol id="d-right" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></symbol>
   </defs>
 </svg>
 
@@ -703,7 +807,76 @@ p,li,.faq-q,.fq-q{text-wrap:pretty}
     <!-- [VÍDEO CURTO DO PRODUTO EM USO] — dashboard abaixo é provisório; trocar por <video autoplay muted loop playsinline> -->
     <div class="dash-stage" id="dashStage">
       <div class="dash-frame" id="dashFrame">
-        <img class="shot-dash" src="img/painel.jpg" alt="Painel da Vertta com clientes ativos, vistorias por status, licenças e atividade recente" width="1440" height="900" loading="eager" decoding="async">
+        <div class="dh-box" role="img" aria-label="Painel da Vertta com clientes ativos, vistorias por status, licenças e atividade recente">
+<div class="dh" aria-hidden="true">
+  <aside class="dh-side">
+    <div class="dh-brand">
+      <svg class="dh-logo" viewBox="0 0 737 182"><use href="#logo-mono"/></svg>
+      <p>Operação · Inteligência ·<br>Sustentabilidade</p>
+    </div>
+    <div class="dh-op"><svg><use href="#d-grid"/></svg>Operação<svg class="dh-chev"><use href="#d-down"/></svg></div>
+    <div class="dh-sub on"><svg><use href="#d-home"/></svg>Painel</div>
+    <div class="dh-sub"><svg><use href="#d-users"/></svg>Clientes</div>
+    <div class="dh-sub"><svg><use href="#d-leaf"/></svg>Listagem de Licenças</div>
+    <div class="dh-sub"><svg><use href="#d-clip"/></svg>Listagem de Vistorias</div>
+    <div class="dh-sub"><svg><use href="#d-clock"/></svg>Pendências</div>
+    <div class="dh-grp"><svg><use href="#d-bars"/></svg>Relatórios<svg class="dh-chev"><use href="#d-right"/></svg></div>
+    <div class="dh-grp"><svg><use href="#d-folder"/></svg>Modelos<svg class="dh-chev"><use href="#d-right"/></svg></div>
+    <div class="dh-grp"><svg><use href="#d-ucog"/></svg>Administração<svg class="dh-chev"><use href="#d-right"/></svg></div>
+    <div class="dh-grp"><svg><use href="#d-sliders"/></svg>Configurações<svg class="dh-chev"><use href="#d-right"/></svg></div>
+    <div class="dh-grp"><svg><use href="#d-archive"/></svg>Comercial<svg class="dh-chev"><use href="#d-right"/></svg></div>
+  </aside>
+  <div class="dh-main">
+    <header class="dh-top">
+      <div><small class="js-dh-date">Terça-feira, 10 de novembro de 2026</small><h5 class="js-dh-hi">Bom dia, Ana</h5></div>
+      <div class="dh-urg"><svg><use href="#d-ok"/></svg><div><b>Urgências</b><span>Nenhuma pendência urgente</span></div></div>
+    </header>
+    <div class="dh-kpis">
+      <div class="dh-card dh-kpi"><i><svg><use href="#d-users"/></svg></i><div><b>5</b><span>Clientes ativos</span></div></div>
+      <div class="dh-card dh-kpi"><i><svg><use href="#d-clip"/></svg></i><div><b>3</b><span>Vistorias em curso</span></div></div>
+      <div class="dh-card dh-kpi"><i><svg><use href="#d-leaf"/></svg></i><div><b>0</b><span>Licenças emitidas</span></div></div>
+      <div class="dh-card dh-kpi"><i><svg><use href="#d-alert"/></svg></i><div><b>0</b><span>Vencendo em 180d</span></div></div>
+    </div>
+    <div class="dh-charts">
+      <div class="dh-card dh-chart">
+        <div class="dh-ch"><h6>Vistorias por status</h6><em>Ver todas</em></div>
+        <div class="dh-donut-row">
+          <div class="dh-donut">
+            <svg viewBox="0 0 180 180">
+              <circle class="seg s1" cx="90" cy="90" r="65" pathLength="100"/>
+              <circle class="seg s2" cx="90" cy="90" r="65" pathLength="100"/>
+              <circle class="seg s3" cx="90" cy="90" r="65" pathLength="100"/>
+            </svg>
+            <div class="dh-total"><b>6</b><span>total</span></div>
+          </div>
+          <ul class="dh-leg">
+            <li><i style="background:#98A3B3"></i>Rascunho<b>2</b><small>33%</small></li>
+            <li><i style="background:#3B82F6"></i>Salva<b>3</b><small>50%</small></li>
+            <li><i style="background:#16A34A"></i>Finalizada<b>1</b><small>17%</small></li>
+          </ul>
+        </div>
+      </div>
+      <div class="dh-card dh-chart">
+        <div class="dh-ch"><h6>Licenças por status</h6><em>Ver todas</em></div>
+        <p class="dh-empty">Nenhuma licença registrada.</p>
+      </div>
+    </div>
+    <p class="dh-lbl">Ações rápidas</p>
+    <div class="dh-acts">
+      <div class="dh-card dh-act"><i><svg><use href="#d-clip"/></svg></i>Nova vistoria</div>
+      <div class="dh-card dh-act"><i><svg><use href="#d-leaf"/></svg></i>Nova licença</div>
+      <div class="dh-card dh-act"><i><svg><use href="#d-users"/></svg></i>Clientes</div>
+      <div class="dh-card dh-act"><i><svg><use href="#d-file"/></svg></i>Relatórios</div>
+    </div>
+    <div class="dh-card dh-feed">
+      <h6>Atividade recente</h6>
+      <div class="dh-row"><i><svg><use href="#d-clip"/></svg></i><div><b>Vistoria de campo · Fazenda Serra Verde</b><span>Agro Serra Verde</span></div><div class="dh-st"><em>Finalizada</em><span>03/11/2026, 09:00</span></div></div>
+      <div class="dh-row"><i><svg><use href="#d-clip"/></svg></i><div><b>Vistoria de campo · Rio Claro Área 2</b><span>Mineração Rio Claro</span></div><div class="dh-st"><em>Salva</em><span>03/11/2026, 09:00</span></div></div>
+      <div class="dh-row"><i><svg><use href="#d-clip"/></svg></i><div><b>Vistoria de campo · Parque Sul</b><span>Loteamento Parque Sul</span></div><div class="dh-st"><em>Rascunho</em><span>31/10/2026, 15:30</span></div></div>
+    </div>
+  </div>
+</div>
+</div>
       </div>
     </div>
     <!-- NOTA INTERNA: [VÍDEO CURTO DO PRODUTO EM USO] · Sequência sugerida: vistoria no app → cliente e empreendimento → preparação do estudo -->
@@ -959,13 +1132,8 @@ p,li,.faq-q,.fq-q{text-wrap:pretty}
         <h2 id="origem-title" data-words>A Vertta foi criada dentro de uma consultoria ambiental em operação</h2>
         <p>A Vertta nasceu da rotina de uma equipe que trabalha com licenciamento ambiental. Por isso, a plataforma e o suporte foram pensados a partir de situações que fazem parte desse trabalho no dia a dia.</p>
       </div>
-      <!-- [IMAGEM] trocar pela foto real da equipe em campo / rotina da consultoria (sem citar nomes) -->
-      <figure class="oimg" aria-label="Espaço para foto da equipe da consultoria">
-        <span class="shot-tag">[FOTO REAL DA EQUIPE EM CAMPO]</span>
-        <div class="oimg-mark" aria-hidden="true">
-          <svg viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="6" width="18" height="14" rx="3"/><path d="M8 6l1.5-2.5h5L16 6"/><circle cx="12" cy="13" r="3.6"/></g></svg>
-          <span>Imagem de marcação</span>
-        </div>
+      <figure class="oimg has-photo">
+        <img src="img/campo.webp" alt="Equipe da consultoria em campo com drone e celular e em reunião no escritório" width="868" height="737" loading="lazy" decoding="async">
       </figure>
     </div>
   </div>
@@ -1216,6 +1384,22 @@ p,li,.faq-q,.fq-q{text-wrap:pretty}
       if(open){ item.classList.add("open"); b.setAttribute("aria-expanded","true"); }
     });
   });
+})();
+</script>
+
+<script>
+/* painel em HTML: escala o desenho de 1440px para a largura disponível e mostra a data de hoje */
+(function(){
+  var box = document.querySelector(".dh-box"); if(!box) return;
+  var dh = box.querySelector(".dh");
+  function fit(){ dh.style.setProperty("--k", box.clientWidth / 1440); }
+  fit(); if (window.ResizeObserver) new ResizeObserver(fit).observe(box); else window.addEventListener("resize", fit);
+  try{
+    var d = new Date(), t = d.toLocaleDateString("pt-BR",{weekday:"long",day:"numeric",month:"long",year:"numeric"});
+    box.querySelector(".js-dh-date").textContent = t;
+    var h = d.getHours();
+    box.querySelector(".js-dh-hi").textContent = (h < 12 ? "Bom dia" : h < 18 ? "Boa tarde" : "Boa noite") + ", Ana";
+  }catch(e){}
 })();
 </script>
 </body>
