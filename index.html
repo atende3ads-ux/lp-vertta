@@ -12,9 +12,9 @@
 <meta property="og:site_name" content="Vertta">
 <meta property="og:locale" content="pt_BR">
 <!-- [IMPLEMENTAÇÃO] trocar a URL base abaixo pelo domínio final (a imagem precisa de URL absoluta) -->
-<meta property="og:url" content="https://atendimento3ads.github.io/lp-vertta/">
-<meta property="og:image" content="https://atendimento3ads.github.io/lp-vertta/og-vertta-v2.jpg">
-<meta property="og:image:secure_url" content="https://atendimento3ads.github.io/lp-vertta/og-vertta-v2.jpg">
+<meta property="og:url" content="https://aprovacoes.3ads.com.br/lp-vertta/">
+<meta property="og:image" content="https://aprovacoes.3ads.com.br/lp-vertta/og-vertta-v2.jpg">
+<meta property="og:image:secure_url" content="https://aprovacoes.3ads.com.br/lp-vertta/og-vertta-v2.jpg">
 <meta property="og:image:type" content="image/jpeg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -22,7 +22,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Vertta | Da vistoria ao estudo ambiental, sem redigitar nada">
 <meta name="twitter:description" content="Software para consultoria ambiental. Teste grátis por 7 dias.">
-<meta name="twitter:image" content="https://atendimento3ads.github.io/lp-vertta/og-vertta-v2.jpg">
+<meta name="twitter:image" content="https://aprovacoes.3ads.com.br/lp-vertta/og-vertta-v2.jpg">
 <meta name="theme-color" content="#1C2632">
 
 <!-- [IMPLEMENTAÇÃO] GTM: inserir o snippet do container aqui (head) -->
@@ -622,6 +622,17 @@ body.no-notes .note,body.no-notes .shot-tag{display:none}
 .faddr{font-size:14px!important;line-height:1.5;max-width:300px;margin-top:16px!important}
 @media (min-width:640px){.plans{grid-template-columns:1fr}}
 @media (min-width:960px){.plans{grid-template-columns:repeat(3,1fr)}}
+
+/* ---------- Capturas reais do produto ---------- */
+.shot-dash{display:block;width:100%;height:auto;border-radius:18px}
+.tp-vis.has-shot{padding:28px 18px}
+.phone-shot{width:min(250px,72%);border-radius:38px;background:#1C2632;padding:8px;box-shadow:0 30px 60px -24px rgba(28,38,50,.55)}
+.phone-shot img{display:block;width:100%;height:auto;border-radius:30px}
+.win-shot{margin:0;width:100%;max-width:680px;border-radius:14px;overflow:hidden;background:#fff;border:1px solid var(--line);box-shadow:0 30px 60px -30px rgba(28,38,50,.4)}
+.win-shot img{display:block;width:100%;height:auto}
+.bvis.has-shot{display:block;padding:0}
+.bvis.has-shot::after{display:none}
+.bvis.has-shot img{position:relative;z-index:1;display:block;width:100%;height:100%;object-fit:cover;object-position:left top;border-radius:12px}
 /* evita viúvas: títulos equilibrados, parágrafos sem palavra sozinha na última linha */
 h1,h2,h3,h4,.statement,.cta-bar p,.close-bar p{text-wrap:balance}
 p,li,.faq-q,.fq-q{text-wrap:pretty}
@@ -692,52 +703,7 @@ p,li,.faq-q,.fq-q{text-wrap:pretty}
     <!-- [VÍDEO CURTO DO PRODUTO EM USO] — dashboard abaixo é provisório; trocar por <video autoplay muted loop playsinline> -->
     <div class="dash-stage" id="dashStage">
       <div class="dash-frame" id="dashFrame">
-        <div class="dash" aria-hidden="true">
-          <aside class="dash-side">
-            <svg class="logo" viewBox="0 0 737 182"><use href="#logo"/></svg>
-            <div class="dn on"><b></b>Visão geral</div>
-            <div class="dn"><b></b>Clientes</div>
-            <div class="dn"><b></b>Empreendimentos</div>
-            <div class="dn-sep">Módulos</div>
-            <div class="dn"><b></b>Vistorias</div>
-            <div class="dn"><b></b>Estudos Ambientais</div>
-            <div class="dn-sep">Equipe</div>
-            <div class="dn"><b></b>Acessos</div>
-          </aside>
-          <div class="dash-main">
-            <div class="dash-top">
-              <div><h4>Olá, equipe</h4><small>Fazenda Boa Vista · vistoria sincronizada</small></div>
-              <div class="dash-search"><svg><use href="#i-search"/></svg>Buscar cliente ou empreendimento</div>
-            </div>
-            <div class="kpis">
-              <div class="kpi"><small><i></i>Vistorias no mês</small><strong>48 <em>+12%</em></strong></div>
-              <div class="kpi"><small><i></i>Empreendimentos</small><strong>112 <em>+4</em></strong></div>
-              <div class="kpi"><small><i></i>Estudos em revisão</small><strong>9 <em>RCA · PCA</em></strong></div>
-              <div class="kpi"><small><i></i>Clientes ativos</small><strong>42 <em>+3</em></strong></div>
-            </div>
-            <div class="dash-row">
-              <div class="chart">
-                <div class="chart-h">Vistorias registradas<span>2026</span></div>
-                <div class="bars">
-                  <i style="height:42%"></i><i style="height:58%;transition-delay:.05s"></i><i style="height:36%;transition-delay:.1s"></i><i style="height:64%;transition-delay:.15s"></i><i style="height:52%;transition-delay:.2s"></i><i style="height:74%;transition-delay:.25s"></i><i style="height:60%;transition-delay:.3s"></i><i style="height:82%;transition-delay:.35s"></i><i style="height:70%;transition-delay:.4s"></i><i style="height:92%;transition-delay:.45s"></i>
-                </div>
-                <div class="months"><span>Jan</span><span>Fev</span><span>Mar</span><span>Abr</span><span>Mai</span><span>Jun</span><span>Jul</span><span>Ago</span><span>Set</span><span>Out</span></div>
-              </div>
-              <div class="actions">
-                <div class="act"><i><svg><use href="#i-phone"/></svg></i>Nova vistoria</div>
-                <div class="act"><i><svg><use href="#i-map"/></svg></i>Empreendimento</div>
-                <div class="act"><i><svg><use href="#i-ai"/></svg></i>Base do estudo</div>
-                <div class="act"><i><svg><use href="#i-doc"/></svg></i>Revisão técnica</div>
-              </div>
-            </div>
-            <div class="recent">
-              <div class="recent-row h"><div>Últimas vistorias</div><div>Técnico</div><div>Empreendimento</div><div>Status</div></div>
-              <div class="recent-row"><div><span class="av t">14</span>Vistoria de campo #014</div><span>Ana R.</span><span>Fazenda Boa Vista</span><span class="chip ok">Concluída</span></div>
-              <div class="recent-row"><div><span class="av o">13</span>Vistoria de campo #013</div><span>Carlos M.</span><span>Rio Claro · Área 2</span><span class="chip warn">Em campo</span></div>
-            </div>
-          </div>
-        </div>
-        <span class="play" aria-hidden="true"><svg><use href="#i-play"/></svg></span>
+        <img class="shot-dash" src="img/painel.jpg" alt="Painel da Vertta com clientes ativos, vistorias por status, licenças e atividade recente" width="1440" height="900" loading="eager" decoding="async">
       </div>
     </div>
     <!-- NOTA INTERNA: [VÍDEO CURTO DO PRODUTO EM USO] · Sequência sugerida: vistoria no app → cliente e empreendimento → preparação do estudo -->
@@ -851,20 +817,9 @@ p,li,.faq-q,.fq-q{text-wrap:pretty}
           <h3>Registre a vistoria no app</h3>
           <p>O técnico coleta as informações em campo pelo módulo Vistorias e mantém os registros vinculados ao trabalho realizado.</p>
         </div>
-        <div class="tp-vis">
-          <span class="shot-tag">[PRINT REAL DO APP DE VISTORIA AMBIENTAL]</span>
-          <div class="phone" aria-hidden="true">
-            <div class="phone-screen">
-              <div class="ph-top"><div class="ph-status"><span>9:41</span><span>●●●</span></div><small>Mineração Rio Claro · Área 2</small><strong>Vistoria em campo</strong></div>
-              <div class="ph-body">
-                <div class="ph-card"><label>Empreendimento</label><p>Mineração Rio Claro</p></div>
-                <div class="ph-card"><label>Fotos georreferenciadas</label><div class="ph-photos"><span></span><span></span><span>+</span></div></div>
-                <div class="ph-card"><div class="ph-check on"><i></i>Supressão vegetal</div><div class="ph-check on"><i></i>Drenagem</div><div class="ph-check"><i></i>Observações do técnico</div></div>
-                <div class="ph-btn">Salvar vistoria</div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <div class="tp-vis has-shot">
+          <div class="phone-shot"><img src="img/app-vistorias.jpg" alt="App da Vertta no celular com a lista de vistorias e a navegação do técnico em campo" width="780" height="1688" loading="lazy" decoding="async"></div>
+</div>
       </div>
       <div class="tpanel" role="tabpanel">
         <div class="tp-copy gcard">
@@ -872,23 +827,9 @@ p,li,.faq-q,.fq-q{text-wrap:pretty}
           <h3>Organize por cliente e empreendimento</h3>
           <p>Na versão web, a equipe encontra clientes, empreendimentos e histórico organizados para dar sequência ao trabalho.</p>
         </div>
-        <div class="tp-vis">
-          <span class="shot-tag">[PRINT REAL DA TELA DE CLIENTE / EMPREENDIMENTO]</span>
-          <div class="win" aria-hidden="true">
-            <div class="win-bar"><i></i><i></i><i></i><span>clientes</span></div>
-            <div class="win-body">
-              <table class="tbl">
-                <thead><tr><th>Cliente</th><th>Empreend.</th><th class="hide-sm">Responsável</th></tr></thead>
-                <tbody>
-                  <tr><td><span class="av t">AS</span>Agro Serra Verde</td><td>3</td><td class="hide-sm">Ana R.</td></tr>
-                  <tr><td><span class="av">MR</span>Mineração Rio Claro</td><td>2</td><td class="hide-sm">Carlos M.</td></tr>
-                  <tr><td><span class="av o">LP</span>Loteamento Parque Sul</td><td>1</td><td class="hide-sm">Júlia F.</td></tr>
-                  <tr><td><span class="av b">IC</span>Indústria Cerrado</td><td>4</td><td class="hide-sm">Ana R.</td></tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </div>
+        <div class="tp-vis has-shot">
+          <figure class="win-shot"><div class="win-bar"><i></i><i></i><i></i><span>clientes</span></div><img src="img/clientes.jpg" alt="Tela de clientes da Vertta com cadastro, status e histórico de atualização" width="1440" height="900" loading="lazy" decoding="async"></figure>
+</div>
       </div>
       <div class="tpanel" role="tabpanel">
         <div class="tp-copy gcard">
@@ -896,24 +837,9 @@ p,li,.faq-q,.fq-q{text-wrap:pretty}
           <h3>Gere a base do estudo com IA</h3>
           <p>A Vertta usa as informações já registradas para adiantar a base do estudo ambiental. O profissional responsável revisa o conteúdo antes da finalização.</p>
         </div>
-        <div class="tp-vis">
-          <span class="shot-tag">[PRINT REAL DO MÓDULO DE ESTUDOS AMBIENTAIS]</span>
-          <div class="win" aria-hidden="true">
-            <div class="win-bar"><i></i><i></i><i></i><span>estudos ambientais</span></div>
-            <div class="win-body">
-              <div class="doc">
-                <h5>RCA · Diagnóstico do meio físico</h5>
-                <div class="doc-line w9"></div><div class="doc-line w7"></div><div class="doc-line w5"></div>
-                <div class="ai-box">
-                  <div class="ai-head"><span><svg width="14" height="14"><use href="#i-ai"/></svg>Base gerada com IA</span><span class="chip terra">Rascunho</span></div>
-                  <div class="doc-line w9"></div><div class="doc-line w7"></div>
-                  <div class="ai-src"><em>Vistoria #014</em><em>24 fotos</em><em>Histórico do cliente</em></div>
-                </div>
-                <div class="review"><b>Revisão técnica</b><span class="mini">Revisar e validar</span></div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <div class="tp-vis has-shot">
+          <figure class="win-shot"><div class="win-bar"><i></i><i></i><i></i><span>instruções para IA</span></div><img src="img/ia.jpg" alt="Instruções de IA da Vertta para gerar o parecer e o resumo da vistoria" width="1440" height="900" loading="lazy" decoding="async"></figure>
+</div>
       </div>
     </div>
   </div>
@@ -929,15 +855,9 @@ p,li,.faq-q,.fq-q{text-wrap:pretty}
     </div>
     <div class="bento">
       <article class="bcard rv">
-        <div class="bvis" aria-hidden="true">
-          <span class="shot-tag">[PRINT REAL DO MÓDULO VISTORIAS]</span>
-          <span class="scan"></span>
-          <div class="dlist">
-            <div class="drow"><span class="av t">14</span>Fazenda Boa Vista<span class="chip ok">Concluída</span></div>
-            <div class="drow hot"><span class="av o">13</span>Rio Claro · Área 2<span class="chip warn">Em campo</span></div>
-            <div class="drow"><span class="av b">12</span>Parque Sul<span class="chip ok">Concluída</span></div>
-          </div>
-        </div>
+        <div class="bvis has-shot">
+          <img src="img/vistorias-conteudo.jpg" alt="Módulo Vistorias da Vertta com a lista de vistorias por cliente, status e escopo" width="1120" height="900" loading="lazy" decoding="async">
+</div>
         <div class="bcopy">
           <span class="mod-label"><i></i>Vistorias</span>
           <h3>Registre o que acontece em campo pelo app</h3>
@@ -945,15 +865,9 @@ p,li,.faq-q,.fq-q{text-wrap:pretty}
         </div>
       </article>
       <article class="bcard rv d1">
-        <div class="bvis" aria-hidden="true">
-          <span class="shot-tag">[PRINT REAL DO MÓDULO ESTUDOS AMBIENTAIS]</span>
-          <span class="scan" style="animation-delay:-1.8s"></span>
-          <div class="dlist">
-            <div class="drow"><span class="av o">RCA</span><span class="bar"></span><span class="chip warn">Revisão técnica</span></div>
-            <div class="drow hot"><span class="av t">PCA</span><span class="bar"></span><span class="chip terra">Base com IA</span></div>
-            <div class="drow"><span class="av b">RCA</span><span class="bar"></span><span class="chip ok">Validado</span></div>
-          </div>
-        </div>
+        <div class="bvis has-shot">
+          <img src="img/documentos-conteudo.jpg" alt="Modelos de documentos da Vertta usados na geração dos relatórios e estudos" width="1120" height="900" loading="lazy" decoding="async">
+</div>
         <div class="bcopy">
           <span class="mod-label"><i></i>Estudos Ambientais</span>
           <h3>Use os dados já coletados para adiantar a redação</h3>
